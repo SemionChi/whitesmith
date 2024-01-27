@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
+import { LoginButton } from "@/components/auth/login-button";
 
 function Register() {
   return (
@@ -27,6 +28,8 @@ function Register() {
           <Input
             className="px-3 py-2 bg-gray-700 rounded-md"
             id="email"
+            placeholder="m@example.com"
+            required
             type="email"
           />
           <Label className="mt-4 text-gray-400" htmlFor="password">
@@ -55,12 +58,14 @@ function Register() {
           <span className="text-gray-400 text-sm">
             Already have an account?
           </span>
-          <Link
-            className="text-indigo-500 hover:text-indigo-600 text-sm ml-1"
-            href="#"
-          >
-            Login
-          </Link>
+          <LoginButton>
+            <Link
+              className="text-indigo-500 hover:text-indigo-600 text-sm ml-1"
+              href="#"
+            >
+              Login
+            </Link>
+          </LoginButton>
         </div>
       </div>
     </main>

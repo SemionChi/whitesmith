@@ -3,8 +3,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-import { RegisterButton } from "@/components/ui/auth/register-button";
-
+import { RegisterButton } from "@/components/auth/register-button";
 export default function Login() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen ">
