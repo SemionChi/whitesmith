@@ -6,6 +6,6 @@ import Link from "next/link";
 import { CardWrapper } from "@/components/auth/card-wrapper";
 import { LoginForm } from "@/components/auth/login-form";
 
-export default function Login_test() {
+export default function Login() {
   return <LoginForm />;
 }
