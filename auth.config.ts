@@ -5,6 +5,7 @@ import type { NextAuthConfig } from "next-auth";
 import { getUserByEmail } from "./data/user";
 
 export default {
+  trustHost: true, // for build
   providers: [
     Credentials({
       async authorize(credentials) {
